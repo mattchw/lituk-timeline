@@ -18,30 +18,36 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "10,000 years ago",
       dotColor: "primary",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Doggerland.svg/1200px-Doggerland.svg.png",
-      cardTitle: "Stone Age",
+      cardTitle: "The Stone Age",
       cardDescription: "UK was permanently separated from the continent by the Channel",
     },
     {
       title: "6,000 years ago",
       dotColor: "primary",
-      cardTitle: "Stone Age",
-      cardDescription: "first farmers from south-east Europe arrived in Britain",
+      cardTitle: "The Stone Age",
+      cardDescription: "The first farmers from south-east Europe arrived in Britain",
     },
     {
       title: "4,000 years ago",
       dotColor: "primary",
-      cardTitle: "Stone Age",
-      cardDescription: "people in Britain learned to make bronze tools and weapons",
+      cardTitle: "The Stone Age",
+      cardDescription: "People in Britain learned to make bronze tools and weapons",
     },
     {
       title: "55 BC",
       dotColor: "primary",
       image: "https://www.heritagedaily.com/wp-content/uploads/2021/05/cca.jpg",
-      cardTitle: "Jullius Caesar invasion",
-      cardDescription: "Julius Caesar led a Roman invasion of Britain in 55 BC. He was defeated, but returned the following year and conquered much of southern England. The Romans called the land Britannia.",
+      cardTitle: "Julius Caesar invasion (Unsuccessful)",
+      cardDescription: "Julius Caesar led a Roman invasion of Britain in 55 BC.",
+      items: [
+        {
+          title: "Julius Caesar was defeated",
+          description: "He was defeated, but returned the following year and conquered much of southern England. The Romans called the land Britannia.",
+        },
+      ],
     },
     {
-      title: "AD 33",
+      title: "AD 43",
       dotColor: "primary",
       image: "https://static.wixstatic.com/media/8dcf0f_b86e7bab89e04240a09b104f3aac3f5b~mv2.jpg/v1/fill/w_640,h_960,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8dcf0f_b86e7bab89e04240a09b104f3aac3f5b~mv2.jpg",
       cardTitle: "Emperor Claudius invasion (success)",
@@ -61,14 +67,14 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "AD 410",
       dotColor: "primary",
       image: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1f6f4688-a688-11ea-a585-dcb14d2bcd47.jpg?crop=2362%2C2362%2C0%2C0",
-      cardTitle: "Roman left Britain",
-      cardDescription: "The Romans left Britain",
+      cardTitle: "The Roman army left Britain",
+      cardDescription: "The Roman army left Britain to defend other parts of the Roman Empire and never returned.",
     },
     {
       title: "AD 600",
       dotColor: "primary",
       image: "https://i.pinimg.com/1200x/76/88/58/7688580da8d0760f011beffb31147ac5.jpg",
-      cardTitle: "Anglo-Saxons",
+      cardTitle: "The Anglo-Saxons",
       cardDescription: "Anglo-Saxon kingdoms were established",
       items: [
         {
@@ -85,14 +91,14 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "AD 789",
       dotColor: "primary",
       image: "https://gameranx.com/wp-content/uploads/2021/12/assassins-creed-valhalla-update-1-4-1.large_-1024x576.webp",
-      cardTitle: "Viking from Denmark and Norway raid Britain",
+      cardTitle: "Vikings from Denmark and Norway raid Britain",
       cardDescription: "King Alfred the Great of Wessex defeated the Vikings"
     },
     {
       title: "1066",
       dotColor: "primary",
-      cardTitle: "Norman Conquest",
-      cardDescription: "last successful foreign invasion of Britain",
+      cardTitle: "The Norman Conquest",
+      cardDescription: "This was the last successful foreign invasion of Britain",
       image: "https://www.historic-uk.com/wp-content/uploads/2017/04/norman-conquest-of-britain.jpg",
       items: [
         {
@@ -100,16 +106,16 @@ const timelineItems: Record<string, TimelineItem[]> = {
           description: "William, Duke of Normandy, defeated King Harold II of England at the Battle of Hastings. William became king of England and is known as William the Conqueror. He built castles all over England to control his new kingdom.",
         },
         {
-          title: 'Domesday Book',
-          description: "William the Conqueror ordered a survey of all the land in England. The information was recorded in the Domesday Book.",
+          title: 'The Domesday Book',
+          description: "William the Conqueror drew up lists of all the towns and villages in England. The information was recorded in the Domesday Book.",
         }
       ]
     },
     {
       title: "1215",
       dotColor: "primary",
-      cardTitle: "Magna Carta",
-      cardDescription: "Magna Carta was signed by King John at Runnymede near London. It was the first document to limit the powers of the king and protect the rights of the people.",
+      cardTitle: "The Magna Carta",
+      cardDescription: "The Magna Carta was signed by King John. It was the first document to limit the powers of the king and protect the rights of the nobility.",
       image: "https://cdn.britannica.com/28/144228-050-FB55C473/engraving-King-John-Magna-Carta-Runnymede-England-June-15-1215.jpg",
     },
     {
@@ -123,33 +129,33 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "1314",
       dotColor: "primary",
       cardTitle: "Robert the Bruce",
-      cardDescription: "King Edward I introduced the Statute of Rhuddlan, which annexed Wales to England. The Statute of Rhuddlan divided Wales into counties and introduced English law.",
+      cardDescription: "The Scottish, led by Robert the Bruce, defeated the English at the Battle of Bannockburn, and Scotland remained unconquered by the English.",
       image: "https://www.britishbattles.com/wp-content/uploads/2017/12/robert-de-bruce-kills-bohun-s-web-AAA.jpg"
     },
     {
       title: "1400",
       dotColor: "primary",
       cardTitle: "Norman French and Angle-Saxon English became English",
-      cardDescription: "Norman French and Angle-Saxon English became English",
+      cardDescription: "Norman French and Angle-Saxon English became English. In England, official documents were being written in English, and English had become the preferred language of the royal court and Parliament.",
     },
     {
       title: "1415",
       dotColor: "primary",
-      cardTitle: "Battle of Agincourt",
+      cardTitle: "The Battle of Agincourt",
       cardDescription: "King Henry V of England defeated the French at the Battle of Agincourt",
       image: "https://cdn.britannica.com/19/172519-050-F3B2578B/Battle-of-Agincourt.jpg"
     },
     {
       title: "1455",
       dotColor: "primary",
-      cardTitle: "Wars of the Roses",
-      cardDescription: "Wars of the Roses began between the House of Lancaster and the House of York. The Wars of the Roses were a series of battles fought between the House of Lancaster and the House of York. Both families were descended from King Edward III. The symbol of the House of Lancaster was a red rose and the symbol of the House of York was a white rose.",
+      cardTitle: "The Wars of the Roses",
+      cardDescription: "The Wars of the Roses began between the House of Lancaster and the House of York. The Wars of the Roses were a series of battles fought between the House of Lancaster and the House of York. Both families were descended from King Edward III. The symbol of the House of Lancaster was a red rose and the symbol of the House of York was a white rose.",
       image: "https://assets.editorial.aetnd.com/uploads/2015/05/gettyimages-1330675795.jpg"
     },
     {
       title: "1485",
       dotColor: "primary",
-      cardTitle: "Battle of Bosworth",
+      cardTitle: "The Battle of Bosworth Field",
       cardDescription: "Henry Tudor became King Henry VII of England. He ended the Wars of the Roses by marrying Elizabeth of York, the daughter of Edward IV. Henry VII was the first Tudor king of England.",
       image: "https://www.britishbattles.com/wp-content/uploads/2018/07/13-large_richard_iii.jpg"
     },
@@ -174,7 +180,7 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "1547",
       dotColor: "primary",
       cardTitle: "Edward VI",
-      cardDescription: "King Edward VI became king of England",
+      cardDescription: "King Edward VI became king of England, who was strongly Protestant.",
       items: [
         {
           title: 'Book of Common Prayer',
@@ -186,7 +192,7 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "1553",
       dotColor: "primary",
       cardTitle: "Queen Mary I",
-      cardDescription: "Queen Mary I became queen of England",
+      cardDescription: "Queen Mary I became queen of England and was a devout Catholic.",
       items: [
         {
           title: 'Bloody Mary',
@@ -198,7 +204,7 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "1558",
       dotColor: "primary",
       cardTitle: "Queen Elizabeth I",
-      cardDescription: "Queen Mary I became queen of England",
+      cardDescription: "Queen Elizabeth I became queen of England",
       items: [
         {
           title: 'Queen Elizabeth I re-established the Church of England',
@@ -209,7 +215,7 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1560",
       dotColor: "primary",
-      cardTitle: "Protestantism",
+      cardTitle: "Scottish Reformation - Protestantism",
       cardDescription: "Protestant Scottish Parliament abolished the authority of the Pope in Scotland",
     },
     {
@@ -222,7 +228,7 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "1588",
       dotColor: "primary",
       cardTitle: "English defeated the Spanish Armada",
-      cardDescription: "English defeated the Spanish Armada",
+      cardDescription: "The Spanish Armada was defeated.",
     },
     {
       title: "1603",
@@ -234,7 +240,7 @@ const timelineItems: Record<string, TimelineItem[]> = {
       title: "1603",
       dotColor: "primary",
       cardTitle: "King James I of England",
-      cardDescription: "James VI of Scotland became King James I of England",
+      cardDescription: "Elizabeth's cousin, James VI of Scotland became King James I of England",
       items: [
         {
           title: "Authorised Version of the Bible",
@@ -261,8 +267,8 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1642",
       dotColor: "primary",
-      cardTitle: "English Civil War started",
-      cardDescription: "English Civil War began between the Royalists (Cavaliers), who supported the king, and the Parliamentarians (Roundheads), who supported Parliament",
+      cardTitle: "The English Civil War started",
+      cardDescription: "The English Civil War began between the Royalists (Cavaliers), who supported the king, and the Parliamentarians (Roundheads), who supported Parliament",
       items: [
         {
           title: "King's army defeated",
@@ -273,7 +279,7 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1646",
       dotColor: "primary",
-      cardTitle: "English Civil War ended",
+      cardTitle: "The English Civil War ended",
       cardDescription: "Parliamentarians defeated the Royalists in the English Civil War",
     },
     {
@@ -303,38 +309,38 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1679",
       dotColor: "primary",
-      cardTitle: "Habeas Corpus Act",
-      cardDescription: "Habeas Corpus Act was passed by Parliament. Every prisoner has the right to a court hearing",
+      cardTitle: "The Habeas Corpus Act",
+      cardDescription: "The Habeas Corpus Act was passed by Parliament. Every prisoner has the right to a court hearing",
     },
     {
       title: "1688",
       dotColor: "primary",
-      cardTitle: "Glorious Revolution",
-      cardDescription: "William of Orange invaded England and proclaimed himself as King William III of England. He ruled jointly with his wife, Mary II, who was the daughter of King James II",
+      cardTitle: "The Glorious Revolution",
+      cardDescription: "William of Orange invaded England and proclaimed himself as King William III of England. When William reached England, there was no resistance. He ruled jointly with his wife, Mary II, who was the daughter of King James II",
     },
     {
       title: "1689",
       dotColor: "primary",
-      cardTitle: "Bill of Rights",
-      cardDescription: "Bill of Rights was passed by Parliament. It confirmed the rights of Parliament and the limits of the king's power",
+      cardTitle: "The Bill of Rights",
+      cardDescription: "The Bill of Rights was passed by Parliament. It confirmed the rights of Parliament and the limits of the king's power",
     },
     {
       title: "1690",
       dotColor: "primary",
       cardTitle: "Battle of the Boyne",
-      cardDescription: "Battle of the Boyne was fought between the forces of the deposed King James II of England and Ireland, and those of King William III. William III defeated James II, who fled to France",
+      cardDescription: "The Battle of the Boyne was fought between the forces of the deposed King James II of England and Ireland, and those of King William III. William III defeated James II, who fled to France",
     },
     {
       title: "1707",
       dotColor: "primary",
-      cardTitle: "Treaty of Union in Scotland (Act of Union)",
-      cardDescription: "Treaty of Union in Scotland (Act of Union) was passed by the Scottish and English Parliaments. It kept the Scottish legal and education systems and the Presbyterian Church of Scotland. It also created the Parliament of Great Britain",
+      cardTitle: "The Treaty of Union in Scotland (The Act of Union)",
+      cardDescription: "The Treaty of Union in Scotland (The Act of Union) was passed by the Scottish and English Parliaments. It kept the Scottish legal and education systems and the Presbyterian Church of Scotland. It also created the Parliament of Great Britain",
     },
     {
       title: "1714",
       dotColor: "primary",
       cardTitle: "King George I",
-      cardDescription: "King George I, who was a German, became king of Great Britain",
+      cardDescription: "King George I, who was a German, became the king of Great Britain",
     },
     {
       title: "1721",
@@ -345,26 +351,26 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1745",
       dotColor: "primary",
-      cardTitle: "Rebellion of the clans",
-      cardDescription: "Rebellion of the clans was led by Bonnie Prince Charlie, the grandson of King James II, attempted to take back the throne from King George II.",
+      cardTitle: "The Rebellion of the clans",
+      cardDescription: "The Rebellion of the clans was led by Bonnie Prince Charlie, the grandson of King James II, attempted to take back the throne from King George II.",
     },
     {
       title: "1746",
       dotColor: "primary",
-      cardTitle: "Battle of Culloden",
+      cardTitle: "The Battle of Culloden",
       cardDescription: "Bonnie Prince Charlie was defeated by the king's army at the Battle of Culloden. He escaped to Europe (France). This was the last battle to be fought on British soil.",
     },
     {
       title: "1776",
       dotColor: "primary",
-      cardTitle: "American War of Independence started",
-      cardDescription: "American War of Independence started. 13 American colonies declared their independence from Britain",
+      cardTitle: "The American War of Independence started",
+      cardDescription: "The American War of Independence started. 13 American colonies declared their independence from Britain",
     },
     {
       title: "1783",
       dotColor: "primary",
-      cardTitle: "American War of Independence ended",
-      cardDescription: "American War of Independence ended. Britain recognised the independence of the United States of America",
+      cardTitle: "The American War of Independence ended",
+      cardDescription: "The American War of Independence ended. Britain recognised the independence of the United States of America",
     },
     {
       title: "1801",
@@ -375,25 +381,25 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1805",
       dotColor: "primary",
-      cardTitle: "Battle of Trafalgar",
+      cardTitle: "The Battle of Trafalgar",
       cardDescription: "Admiral Nelson led British navy to fight against the French and Spanish navies at the Battle of Trafalgar. He was killed in the battle.",
     },
     {
       title: "1807",
       dotColor: "primary",
-      cardTitle: "Slave trade was abolished",
+      cardTitle: "The Slave trade was abolished",
       cardDescription: "It became illegal to trade slaves in the British Empire",
     },
     {
       title: "1815",
       dotColor: "primary",
-      cardTitle: "Battle of Waterloo",
+      cardTitle: "The Battle of Waterloo",
       cardDescription: "Emperor Napoleon of France was defeated by the Duke of Wellington at the Battle of Waterloo",
     },
     {
       title: "1833",
       dotColor: "primary",
-      cardTitle: "Emancipation Act",
+      cardTitle: "The Emancipation Act",
       cardDescription: "Slavery was abolished in the British Empire",
     },
     {
@@ -405,26 +411,26 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1853",
       dotColor: "primary",
-      cardTitle: "Crimean War",
-      cardDescription: "Crimean War started between Britain, France and Turkey on one side and Russia on the other side. It was extensively covered by media for the first time.",
+      cardTitle: "The Crimean War",
+      cardDescription: "The Crimean War started between Britain, France and Turkey on one side and Russia on the other side. It was extensively covered by media for the first time.",
     },
     {
       title: "1889",
       dotColor: "primary",
       cardTitle: "Women's Franchise League",
-      cardDescription: "Emmeline Pankhurst set up Women's Franchise League",
+      cardDescription: "Emmeline Pankhurst set up the Women's Franchise League",
     },
     {
       title: "1895",
       dotColor: "primary",
-      cardTitle: "National Trust",
-      cardDescription: "National Trust was founded by 3 volunteers. It is a charity that protects historic places and green spaces in England, Wales and Northern Ireland.",
+      cardTitle: "The National Trust",
+      cardDescription: "The National Trust was founded by 3 volunteers. It is a charity that protects historic places and green spaces in England, Wales and Northern Ireland.",
     },
     {
       title: "1899",
       dotColor: "primary",
-      cardTitle: "Boer War",
-      cardDescription: "Boer War started between Britain and the Boers (Dutch settlers from Netherlands) in South Africa",
+      cardTitle: "The Boer War",
+      cardDescription: "The Boer War started between Britain and the Boers (Dutch settlers from Netherlands) in South Africa",
     },
     {
       title: "1908",
@@ -435,44 +441,44 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1913",
       dotColor: "primary",
-      cardTitle: "Home Rule Act for Ireland",
-      cardDescription: "Home Rule Act for Ireland was passed by the British Parliament. It was suspended because of the First World War.",
+      cardTitle: "The Home Rule Bill for Ireland",
+      cardDescription: "Home Rule Bill for Ireland was passed by the British Parliament. It was suspended because of the First World War.",
     },
     {
       title: "1914",
       dotColor: "primary",
-      cardTitle: "World War I started",
-      cardDescription: "Archduke Franz Ferdinand of Austria was assassinated on 28 June 1914. World War I started between Britain, France and Russia on one side and Germany, Austria-Hungary and Turkey on the other side.",
+      cardTitle: "The First World War started",
+      cardDescription: "Archduke Franz Ferdinand of Austria was assassinated on 28 June 1914. The First World War started between Britain, France and Russia on one side and Germany, Austria-Hungary and Turkey on the other side.",
     },
     {
       title: "1918",
       dotColor: "primary",
-      cardTitle: "World War I ended",
-      cardDescription: "World War I ended at 11am on 11 November 1918 (Armistice Day). Germany surrendered and the fighting stopped.",
+      cardTitle: "The First World War ended",
+      cardDescription: "The First World War ended at 11am on 11 November 1918 (Armistice Day). Germany surrendered and the fighting stopped.",
     },
     {
       title: "1918",
       dotColor: "primary",
-      cardTitle: "Women over 30 were given the right to vote",
+      cardTitle: "Right to vote for women (over 30)",
       cardDescription: "Women over 30 were given the right to vote",
     },
     {
       title: "1922",
       dotColor: "primary",
-      cardTitle: "Ireland was divided into Northern Ireland and Southern Ireland",
+      cardTitle: "Ireland became two countries",
       cardDescription: "Ireland was divided into Northern Ireland and Southern Ireland",
     },
     {
       title: "1928",
       dotColor: "primary",
-      cardTitle: "Women over 21 were given the right to vote",
-      cardDescription: "Women over 21 were given the right to vote",
+      cardTitle: "Right to vote for women (over 21)",
+      cardDescription: "Women were given the right to vote at the age of 21, the same as men",
     },
     {
       title: "1929",
       dotColor: "primary",
-      cardTitle: "Great Depression",
-      cardDescription: "Great Depression started. It was a worldwide economic depression that lasted until the late 1930s.",
+      cardTitle: "The Great Depression",
+      cardDescription: "The Great Depression started. It was a worldwide economic depression that lasted until the late 1930s.",
     },
     {
       title: "1933",
@@ -483,13 +489,13 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1939",
       dotColor: "primary",
-      cardTitle: "World War II started",
-      cardDescription: "Hitler invaded Poland. World War II started between Britain and France on one side and Germany on the other side.",
+      cardTitle: "The Second World War started",
+      cardDescription: "Hitler invaded Poland. The Second World War started between Britain and France on one side and Germany on the other side.",
     },
     {
       title: "1940",
       dotColor: "primary",
-      cardTitle: "Winson Churchill became Prime Minister",
+      cardTitle: "Winson Churchill",
       cardDescription: "Winson Churchill became Prime Minister",
     },
     {
@@ -499,16 +505,22 @@ const timelineItems: Record<string, TimelineItem[]> = {
       cardDescription: "Germany invaded the Soviet Union",
     },
     {
+      title: "1941",
+      dotColor: "primary",
+      cardTitle: "The United State entered the war",
+      cardDescription: "The United States entered the war when the Japanese bombed its naval base at Pearl Harbour in December 1941",
+    },
+    {
       title: "1944",
       dotColor: "primary",
-      cardTitle: "Allied forces landed in Normandy, France",
+      cardTitle: "D-Day",
       cardDescription: "Allied forces landed in Normandy, France",
     },
     {
       title: "1945",
       dotColor: "primary",
-      cardTitle: "World War II ended",
-      cardDescription: "World War II ended. Germany surrendered on 7 May 1945. Japan surrendered on 14 August 1945.",
+      cardTitle: "The Second World War ended",
+      cardDescription: "The Second World War ended. Germany surrendered on 7 May 1945. Japan surrendered on 14 August 1945.",
     },
     {
       title: "1947",
@@ -523,10 +535,16 @@ const timelineItems: Record<string, TimelineItem[]> = {
       cardDescription: "Aneurin Bevan established the National Health Service (NHS)",
     },
     {
+      title: "1948",
+      dotColor: "primary",
+      cardTitle: "Second UK Olympics Games",
+      cardDescription: "Second UK Olympics Games was held in London",
+    },
+    {
       title: "1949",
       dotColor: "primary",
       cardTitle: "Ireland became a republic",
-      cardDescription: "Ireland became a republic",
+      cardDescription: "Ireland became a republic and had its own government",
     },
     {
       title: "1952",
@@ -543,8 +561,8 @@ const timelineItems: Record<string, TimelineItem[]> = {
     {
       title: "1960",
       dotColor: "primary",
-      cardTitle: "Swinging Sixties",
-      cardDescription: "Swinging Sixties started. It was a youth-driven cultural revolution that took place in the United Kingdom during the mid-to-late 1960s",
+      cardTitle: "The Swinging Sixties",
+      cardDescription: "The Swinging Sixties started. It was a youth-driven cultural revolution that took place in the United Kingdom during the mid-to-late 1960s",
     },
     {
       title: "1969",
